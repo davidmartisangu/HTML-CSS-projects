@@ -1,0 +1,100 @@
+.hero{
+    .container{
+        display: flex;
+    }
+    &__content{
+        width: 50%;
+    }
+    &__intro{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__title{
+        font-family: $secundary-font;
+        text-transform: uppercase;
+        font-size: 90px;
+        width: 100%;
+        line-height: 100px;
+        font-weight: 500;
+        padding-bottom: 18px;
+        span{
+            color: $pink;
+        }
+    }
+    &__subtitle{
+        padding-bottom: 38px;
+    }
+    &__buttons{
+        font-weight: 300;
+        font-size: 14px;
+    }
+    &__img{
+        width: 50%;
+        position: relative;
+        img.woman_pic{
+            width: 90%;
+        }
+    }
+    &__projects{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        width:fit-content;
+        padding: 14px;
+        box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.15);
+        span{
+            margin-right: 10px;
+            padding: 9px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        span.hero__projects__icon{
+            background-color: $pink;
+            border-radius: 40%;
+            display: flex; //para cetrarlo verticalmente en el fondo
+            align-items: center; //para cetrarlo verticalmente en el fondo
+        }
+        &__title{
+            font-size: 18px;
+        }
+        &__description{
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+    .design1{
+        position: absolute;
+        top:60px;
+        left: -10px;
+    }
+    .design2{
+        position: absolute;
+        bottom: 0px;
+        right: 50px;
+    }
+    .design3{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+    }
+    &__points1{
+        position: absolute;
+        top: 33px;
+        right: 0px;
+        img{
+            width: 55%;
+        }
+    }
+    &__points2{
+        position: absolute;
+        bottom: 130px;
+        left: -90px;
+        transform: rotate(90deg);
+        img{
+            width: 80%;
+        }
+    }
+}

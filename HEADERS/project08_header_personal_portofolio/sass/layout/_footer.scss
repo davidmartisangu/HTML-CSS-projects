@@ -1,0 +1,23 @@
+.footer{
+    &__header{
+        font-family: $secundary-font;
+        font-size: 32px;
+        h2{
+            font-weight: 300;
+        }
+    }
+    &__content{
+        display: flex;
+        img{
+            width: 10%;
+        }
+        &__item__title{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &__item__description{
+            width: 70%;
+            color: $gray;
+        }
+    }
+}

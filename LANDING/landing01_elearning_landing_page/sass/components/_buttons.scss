@@ -1,0 +1,13 @@
+.btn-black{
+    @include button-dark
+}
+
+.hero__button__radiant{
+    @include button-pink;
+    text-decoration: none;
+}
+
+.btn-orange{
+    @include button-orange;
+    text-decoration: none;
+}

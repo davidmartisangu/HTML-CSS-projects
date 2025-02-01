@@ -1,0 +1,7 @@
+.nav_header ul{
+    margin-top: 16px;
+    @include reset-list();
+    li a{
+        text-decoration: none;
+    }
+}

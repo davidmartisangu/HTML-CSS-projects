@@ -1,0 +1,24 @@
+.hero{
+    @include breakpoint(tablet){
+        padding-top: 46px;
+    }
+    > p:first-of-type{
+        padding-top: 30px;
+        @include breakpoint(tablet){
+            padding-top: 34px;
+        }
+        @include breakpoint(desktop){
+            max-width: 85%;
+        }
+    }
+    &_buttons{
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        gap: 32px;
+        @include breakpoint(tablet){
+            padding-top: 39px;
+        }
+    }
+
+}

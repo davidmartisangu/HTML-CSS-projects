@@ -1,0 +1,41 @@
+.main_hero{
+    margin-top: 56px;
+    @include breakpoint(tablet){
+        display: flex;
+    }
+    @include breakpoint(desktop){
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-top: 25px;
+        justify-content: space-between;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 25;
+            right: 0px;
+            content: "";
+            height: 50%;
+            width: 93px;
+            background-color: $grey;
+            background-size: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+    }
+    &_photo{
+        padding-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+        @include breakpoint(tablet){
+            padding-top: 0px;
+            overflow-x: hidden;
+            justify-content: normal;
+            img{
+                height: 425px;
+                max-width: none;
+            }
+        }
+    }
+}

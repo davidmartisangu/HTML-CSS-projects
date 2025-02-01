@@ -1,0 +1,23 @@
+header{
+    padding-top: 16px;
+    margin-bottom: 60px;
+    .container{
+        display: flex;
+        align-items: center;
+        nav.nav_principal{
+            padding-left: 22%;
+            ul{
+                @include reset-list();
+                justify-content: space-between;
+                gap: 50px;
+                li a{
+                    text-decoration: none;
+                    color: $dark;
+                    &:hover{
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+}

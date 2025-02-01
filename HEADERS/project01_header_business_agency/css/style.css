@@ -1,0 +1,167 @@
+/*box-sizing:border-box para asegurar que el tamaño que pongo ya incluye el padding, margin*/
+
+.page{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/hero@2x.jpg);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0;
+    padding: 10px 60px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header > figure{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header figure > img{
+    height: 30px;
+    width: 140px;
+}
+
+header figure > figcaption{
+    display: none;
+}
+
+.navegador{
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /*alinea el logo y la lista de lis horizontalmente*/
+    align-items: center;
+    padding: 0;
+    width: 450px;
+}
+
+.navegador li a{
+    text-decoration: none;
+    color: var(--text-and-main-black, #424241);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero{
+    width: 580px;
+}
+
+.hero > p{
+    width: 500px;
+}
+
+.hero h1{
+    color: var(--text-and-main-gray, #424241);
+    font-family: 'Bebas Neue';
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85px; /* 100% */
+    margin-bottom: 15px;
+}
+
+.hero h1 span{
+    color: var(--text-and-main-gray, #7EDAD2);
+}
+
+.hero p{
+    color: var(--text-and-main-gray-2, #909090);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    margin-bottom: 25px;
+}
+
+.hero a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #7EDAD2;
+    color: var(--text-and-main-white, #FAFAFA);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.hero > .hero_numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 45px;
+}
+
+.hero > .hero_numbers > div p:first-child{
+    color: var(--text-and-main-black, #424241);
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.hero > .hero_numbers > div p:nth-child(2){
+    margin-top:0px;
+    color: var(--text-and-main-gray-2, #909090);
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.submenu{
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.submenu div{
+    background-color: white;
+    padding: 23px;
+
+}
+
+.submenu img{
+    width: 40px;
+}
+
+.submenu h3{
+    margin:0;
+    color: var(--text-and-main-black, #424241);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.submenu p{
+    margin:0;
+    color: var(--text-and-main-gray-2, #909090);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.submenu p#last_p{
+    margin-top: 17.2px;
+}

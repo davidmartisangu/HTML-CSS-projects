@@ -1,0 +1,120 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list(){
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin button-dark(){
+  display: inline-block;
+  background-color: $dark;
+  padding: 14px 32px;
+  border-radius: 28px;
+  color: $white;
+  font-weight: 600;
+  &:hover{
+    background-color: $purple;
+  }
+}
+
+@mixin button-pink(){
+  @include button-dark();
+  background-image: $gradient-orange;
+  &:hover{
+    background-image: $gradient-orange-light;
+  }
+}
+
+@mixin button-orange(){
+  @include button-dark();
+  background-image: $gradient-blue;
+  &:hover{
+    background-image: $gradient-blue-light;
+  }
+}
+
+@mixin button-icon(){
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-image: $gradient-orange;
+}
+
+@mixin button-cta(){
+  text-decoration: none;
+  color: $pink;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin body-medium(){
+  color: $gray;
+  font-family: $primary-font;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+@mixin body-bold(){
+  color: $gray;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@mixin heading-S(){
+  color: $dark;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+}
+@mixin heading-M(){
+  color: $dark;
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+@mixin heading-L(){
+  color: $dark;
+  font-family: $primary-font;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 51px;
+}
+@mixin heading-XL(){
+  color: $dark;
+  font-family: $primary-font;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 70px;
+}

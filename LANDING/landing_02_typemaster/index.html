@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Vite Project Sass</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main_head">
+          <img src="img/logo.jpg" alt="company logo">
+          <a href="#" class="button_blue">PRE-ORDER NOW</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main_hero"> <!-- no lo pongo en container pq voy a incluir la foto y la foto no tienen padding right y además puedo
+        jugar para poner la foto horizontal o vertical según se mobil o tablet-->
+        <div class="container" id="containerMain">
+          <div class="hero">
+            <h1>TYPEMASTER KEYBOARD</h1>
+            <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+            <div class="hero_buttons">
+              <a href="#" class="button_orange">PRE-ORDER NOW</a>
+              <p>RELEASE ON 5/27</p>
+            </div>
+          </div>
+        </div>
+        <section class="main_hero_photo">
+          <img src="img/keybordMobile.jpg" alt="teclado" loading="lazy">
+        </section>
+      </section>
+
+      <section class="sub_hero">
+        <div class="sub_hero_images">
+          <img src="img/orangeKeyboard.jpg" alt="keyboard orange">
+          <img src="img/keyboardBig.jpg" alt="desktop keyboard">
+        </div>
+        <div class="sub_hero_properties">
+          <h2>MECHANICAL WIRELESS KEYBOARD</h2>
+          <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps,
+            along with reliable wireless connectivity.</p>
+        </div>
+      </section>
+
+      <section class="properties">
+        <div class="container">
+          <div class="features">
+            <article class="features_compatible">
+              <img src="img/logoMonitor.jpg" alt="compatible">
+              <h3>HIGHLY COMPATIBLE</h3>
+              <p>Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play,
+                no installation or driver needed.</p>
+            </article>
+            <article class="features_bluetooth">
+              <img src="img/bluetooth.jpg" alt="bluetooth">
+              <h3>WIRELESS<span> WITH BLUETOOTH</span></h3>
+              <p>Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
+                Simply plug the unifying receiver into your computer.</p>
+            </article>
+            <article class="features_battery">
+              <img src="img/battery.jpg" alt="batter">
+              <h3>HIGHLY COMPATIBLE</h3>
+              <p>Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones.
+                Enjoy 40 hours of usage time between charges.</p>
+            </article>
+            <article class="features_backlit">
+              <img src="img/light.jpg" alt="backlit">
+              <h3>RGB BACKLIT MODES</h3>
+              <p>Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely
+                in the dark and helps you type in low light conditions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p><span>Typermaster 2021 | </span>All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

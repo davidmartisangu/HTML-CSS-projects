@@ -1,0 +1,269 @@
+:root{
+  --primary_font: Poppins, sans-serif;
+  --secondary_font: Belgrano;
+  --red: #FA504D;
+  --black: #2E2F38;
+  --gray: #8E8E8E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before{
+  content: "";
+  background-color: var(--black);
+  width: 45%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: var(--primary_font);
+  font-size: 18px;
+  color: var(--black);
+
+}
+
+header.header{
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header > p{
+  font-family: var(--secondary_font);
+  font-size: 26px;
+  margin: 0px;
+}
+
+.header > p span{
+  color: #FA504D;
+}
+
+.header .main_nav{
+  margin-left:120px;
+}
+
+.header > nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap:45px;
+}
+
+.header > nav ul li a{
+  color: var(--black);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .header_log{
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.header_log ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:30px;
+}
+
+.header_log ul a{
+  text-decoration: none;
+  color: white;
+}
+
+.button{
+  display: inline-block;
+  background-color: #FA504D;
+  color: white;
+  padding: 8px 30px;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+}
+
+.hero{
+  max-width: 50%;
+}
+
+.main_hero h1{
+  font-family: var(--secondary_font);
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main_hero h1::after{
+  content: ''; /* Necesario para que aparezca el pseudoelemento */
+  width: 35%; /* Ajusta el ancho del pseudoelemento */
+  height: 35%; /* Ajusta la altura del pseudoelemento */
+  background: url('../img/vector.svg'); /* Ruta de la imagen */
+  background-size: contain; /* Ajusta el tamaño de la imagen */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%; /* Ajusta la posición vertical del pseudoelemento */
+  left: 15%; /* Ajusta la posición horizontal del pseudoelemento */
+}
+
+.main_hero h1 span img{
+  position: relative;
+  z-index: 2;
+}
+
+.main_hero > p{
+  color: #8E8E8E;
+  margin-bottom: 20px;
+}
+
+.main_hero > p span{
+  text-decoration: underline;
+  text-decoration-color: #FA504D;
+  text-decoration-thickness: 2px;
+}
+
+.main_hero_logs{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main_hero > a {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.main_hero .button{
+  padding: 10px 60px;
+}
+
+.main_hero .hero_log{
+  padding-left: 20px;
+  color: var(--black);
+}
+
+.hero .hero_foot img{
+  width: 300px;
+}
+
+.hero_foot{
+  margin-top: 50px;
+}
+
+.hero_foot h2{
+  font-family: var(--secondary_font);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.footer_pics{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.sub_hero{
+  margin-left:100px;
+  padding-right: 60px;
+  background-image: url(../img/background_text.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 400px;
+}
+
+.sub_hero > img{
+  width: 400px;
+  transform: translateY(-35px);
+  translate: 50px;
+}
+
+.bid_panel{
+  transform: translateY(-70px);
+  background-color: white;
+  padding: 20px;
+  max-width: 450px;
+  translate: 25px;
+}
+
+.bid_grid{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bid_grid :nth-child(3), .bid_grid :nth-child(5){
+  margin-left:auto;
+}
+
+.bid_grid .light_text{
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.bid_grid .pic_grid{
+  grid-row: span 2;
+}
+
+.pic_grid{
+  width: 60px;
+}
+
+.bid_links{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.bid_links a{
+  text-decoration: none;
+}
+
+.bid_links .link{
+  color: var(--red);
+}
+
+.bid_links .button{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer{
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  gap:40px;
+  font-weight: 200;
+  font-size: 16px;
+  transform: translateY(-35px);
+}
+
+.footer span{
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 10px;
+}

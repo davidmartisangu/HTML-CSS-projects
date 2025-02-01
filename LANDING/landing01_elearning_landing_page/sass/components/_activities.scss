@@ -1,0 +1,99 @@
+.activities__header{
+    @include breakpoint (tablet){
+        margin-bottom: 45px;
+        padding: 24px 29px 32px 28px;
+        background-image: $gradient-orange;
+        border-radius: 10px;
+    }
+    h2{
+        margin-bottom: 45px;
+        padding: 24px 29px 32px 28px;
+        background-image: $gradient-orange;
+        font-size: 24px;
+        color: $white;
+        font-weight: 800;
+        display: inline-block;
+        border-radius: 10px;
+        line-height: 32px;
+        @include breakpoint (tablet){
+            background-image: none;
+        }
+    }
+}
+
+.activities .container{
+    @include breakpoint (tablet){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 25px;
+    }
+    @include breakpoint (tablethorizontal){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px 25px;
+    }
+}
+
+.activities{
+    background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    @include breakpoint (tablet){
+        margin-top: 170px;
+    }
+    padding-bottom: 40px;
+    &__item{
+        padding: 20px 44px 40px 45px;
+        margin-bottom: 50px;
+        border-radius: 16px;
+        background-color: $white;
+        position: relative;
+        &:last-child{
+            margin-bottom: 0;
+            @include breakpoint (tablet){
+                margin-bottom: 50px;
+            }
+        }
+        @include breakpoint (tablet){
+            padding: 20px 34px 40px 35px;
+        }
+        @include breakpoint (tablethorizontal){
+            padding: 20px 23px 40px 23px;
+        }
+        &__icon{
+            display: flex;
+            background-image: $gradient-orange;
+            width: 56px;
+            height: 56px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            img{
+                width: 50%;
+            }
+        }
+        &__title{
+            font-size: 20px;
+            color: $dark;
+            font-weight: 800;
+            padding-top: 20px;
+            padding-bottom: 16px;
+        }
+        &__text{
+            color: $gray;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            padding-bottom: 24px;
+            text-align: justify;
+            @include breakpoint (tablethorizontal){
+                text-align: start;
+            }
+        }
+        &__cta{
+            @include button-cta;
+            margin-bottom:50px;
+        }
+    }
+}

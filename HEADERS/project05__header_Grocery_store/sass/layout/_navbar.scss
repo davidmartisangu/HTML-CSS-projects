@@ -1,0 +1,26 @@
+nav.header_nav{
+    ul{
+        @include reset-list();
+        gap: 40px;
+        a{
+            color:$grey;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 300;
+            &.active, &:hover{
+                color: $orange;
+                position:relative;
+                &::before{
+                    content: "";
+                    width: 80%;
+                    position: absolute;
+                    right:10%;
+                    top: 32px;
+                    height: 3px;
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+
+}

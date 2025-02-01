@@ -1,0 +1,73 @@
+.hero{
+    display: flex;
+    &_content{
+        padding-top: 60px;
+        width: 50%;
+        h1 span{
+            color: $orange;
+        }
+        p{
+            color: $grey;
+            padding-top: 35px;
+            width: 80%;
+            padding-bottom: 35px;
+        }
+        form {
+            display: flex;
+            height: 35px;
+            width: 55%;
+            margin-bottom: 40px;
+            input{
+                width: 90%;
+                background-color: #D0D0D240;
+                border: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                &::placeholder{
+                    color: #949494;
+                    padding-left: 20px;
+                }
+            }
+            button {
+                border: none;
+                img{
+                    width: 35px;
+                }
+            }
+        }
+        .hero_list ul {
+            @include reset-list();
+            width: 60%;
+            color: $grey;
+            font-size: 14px;
+            flex-wrap: wrap;
+            gap: 10px;
+            li{
+                position: relative;
+                width: 45%;
+                padding-left: 25px;
+                &::before{
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    background-image: url(../../img/check.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    position:absolute;
+                    top: 2px;
+                    left:2px;
+                }
+            }
+        }
+    }
+    &_img{
+        width: 50%;
+        
+        img{
+            position:relative;
+            left: -100px;
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.sub_hero{
+    margin-top: 20px;
+    @include breakpoint(desktop){
+        padding-left: 0px;
+        padding-right: 70px;
+        display: flex;
+        align-items: center;
+    }
+    &_images{
+        max-height: 195px;
+        padding-right: 23px;
+        display: flex;
+        justify-content: flex-end;
+        overflow-x: hidden; //creo que no hace falta
+        gap: 36px;
+        position: relative;
+        @include breakpoint(tablet){
+            margin-top: 40px;
+            padding-left: 110px;
+            padding-right: 40px;
+            max-height: 320px;
+            gap: 0px;
+        }
+        @include breakpoint(desktop){
+            max-height: 480px;
+            &::before{
+                content: "";
+                width: 70px;
+                height: 50%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $grey;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+        img{
+            &:first-child{
+                object-fit: contain;
+                max-height: 195px;
+                @include breakpoint(tablet){
+                    max-height: none;
+                    max-width: 214px;
+                    object-fit: none;
+                    border-radius: 20px;
+                }
+            }
+            &:nth-child(2){
+                max-width: 220px;
+                @include breakpoint(tablet){
+                    margin-left: 36px;
+                    max-width: none;
+                }
+                @include breakpoint(desktop){
+                    border-radius: 20px;
+                    max-width: 64%;
+                }
+            }
+        }
+    }
+    &_properties{
+        padding-top: 75px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        p{
+            padding-top: 24px;
+        }
+        @include breakpoint(tablet){
+            display: flex;
+            gap: 90px;
+            align-items: baseline;
+            padding-top: 72px;
+            > * {
+                text-align: start;
+            }
+        }
+        @include breakpoint(desktop){
+            flex-direction: column;
+            gap: 0px;
+            max-width: 34%;
+        }
+    }
+}

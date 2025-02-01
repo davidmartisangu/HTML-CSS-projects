@@ -1,0 +1,66 @@
+.services{
+    padding-top: 70px;
+    background-color: #DEDAD5;
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .white_house{
+        position: relative;
+        right: 80px;
+    }
+    .red_flat{
+        position: relative;
+        right: 140px;
+        z-index: 0;
+    }
+    &_nav{
+        max-width: 280px;
+        background-color: white;
+        padding:18px 28px 6px 28px;
+        position: relative;
+        bottom: 30px;
+        left: 200px;
+        &_title{
+            font-size: 12px;
+            padding-bottom: 5px;
+        }
+    }
+    ol{
+        list-style-type: none; /* Quita los números por defecto */
+        counter-reset: my-counter; /* Reinicia el contador */
+        li+li{
+            border-top: 1px solid #DEDAD5;
+        }
+        li{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            position: relative;
+            counter-increment: my-counter; /* Incrementa el contador en cada elemento de la lista */
+            margin-bottom: 10px; /* Solo para dar un poco de espacio entre elementos de la lista */
+            &::before{
+                content: counter(my-counter, decimal-leading-zero); /* Establece el contenido del pseudo-elemento ::before como el valor del contador con ceros líderes */
+                margin-right: 5px; /* Espacio entre el número y el texto */
+                color: $gray;
+                font-size: 12px;
+            }
+            a{
+                padding-left: 18px;
+                text-decoration: none;
+                color: $black;
+                &::after{
+                    content:"";
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../img/arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 110%;
+                    position: absolute;
+                    right: -1px;
+                }
+            }
+        }
+    }
+}

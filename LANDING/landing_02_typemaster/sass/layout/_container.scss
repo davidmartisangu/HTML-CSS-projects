@@ -1,0 +1,25 @@
+.container{
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 23px;
+    @include breakpoint(tablet){
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @include breakpoint(desktop){
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-top: 55px;
+    }
+
+}
+
+#containerMain{
+    @include breakpoint(tablet){
+        max-width: 58%;
+    }
+    @include breakpoint(desktop){
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,16 @@
+footer {
+
+    background-color: $dark;
+    
+    .nav_footer{
+        padding: 36px 16px ;
+        background-color: $dark;
+        ul{
+            @include reset-list
+        }
+        @include breakpoint (tablethorizontal){
+            padding: 36px 70px ;
+        }
+    }
+
+}

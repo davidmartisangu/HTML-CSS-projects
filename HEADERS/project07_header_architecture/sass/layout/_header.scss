@@ -1,0 +1,43 @@
+.header_principal{
+    padding-top: 26px;
+    padding-bottom: 0px;
+            ::after{
+            content: "";
+            background-color: #DEDAD5;
+            position: absolute;
+            right: 35px;
+            top:-26px;
+            height: 210%;
+            width: 48.55%;
+            z-index: -1;
+        }
+    .container{
+        max-width: 1200px;
+        display:flex;
+        align-items: center;
+        position: relative;
+
+        img{
+            width: 100px;
+        }
+        ul{
+            @include reset-list();
+            gap: 40px;
+            padding-left: 160px;
+            li {
+                &:first-child{
+                    a{
+                        color:$black;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $gray;
+                &:hover{
+                    color:$black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+header{
+    .container{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    nav.nav_principal{
+        ul{
+            @include reset-list();
+            gap: 30px;
+            li a{
+                text-decoration: none;
+                color: $black;
+                font-family: $secondary-font;
+                &:hover{
+                    border-bottom: 2px solid $gray;
+                }
+            }
+        }
+    }
+    a.logo_empresa img{
+        transform: translateX(-50px);
+        width: 4rem;
+    }
+    nav.nav_logo{
+        ul{
+            @include reset-list();
+            gap: 25px;
+            li a img{
+                width: 20px;
+            }
+        }
+    }
+}

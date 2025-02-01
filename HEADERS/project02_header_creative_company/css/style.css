@@ -1,0 +1,144 @@
+/*box-sizing:border-box para asegurar que el tamaño que pongo ya incluye el padding, margin*/
+:root{
+    --font-family-body:Poppins, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1130px;
+    font-family:  var(--font-family-body);
+}
+
+.page{
+    padding: 0px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/business-team@2x.png);
+    background-color: #515DEF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header > p{
+    color: var(--White, #FBFBFB);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin:10px 0px;
+}
+
+header > p span{
+    color: #1BCFF6;
+}
+
+header > nav{
+    position: relative;
+    right: 130px;
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 400px;
+}
+
+header .menu a{
+    text-decoration: none;
+    font-size: 12px;
+    padding: 12px;
+    font-weight: 300;
+    display: block;
+    color:white;
+}
+
+header > a{
+    text-decoration: none;
+    background-color: #515DEF;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 300;
+    display: block;
+}
+
+.hero > p {
+    color:white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 25px; /* 166.667% */
+    margin-bottom: 5px;
+}
+
+.hero > h1 {
+    width: 620px;
+    color:white;
+    font-size:40px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 50px; /* 125% */
+    margin:0;
+}
+
+.hero > p:nth-of-type(2) {
+    width: 550px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.hero > a{
+    text-decoration: none;
+    color:#333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin:30px 0px;
+}
+
+.foot_menu{
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    transform: translateX(-100px); /*para desplazarlo a la izquierda*/
+    padding-top: 20px;
+    padding-left: 60px;
+    height: 130px;
+    width: 730px;
+}
+
+.foot_menu > article{
+    width: 220px;
+}
+
+.foot_menu img{
+    width: 40px;
+}
+
+.foot_menu h3{
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.foot_menu p{
+    color: #909090;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

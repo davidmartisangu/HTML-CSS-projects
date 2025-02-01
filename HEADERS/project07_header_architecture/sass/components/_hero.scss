@@ -1,0 +1,102 @@
+.hero{
+    padding-top: 70px;
+    h1{
+        font-family: $title-font;
+        font-size: 54px;
+        width: 550px;
+        font-weight: 300;
+        padding-bottom: 28px;
+        color: $black;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content:"";
+            background-color: #DEDAD5;
+            opacity: 0.25;
+            position: absolute;
+            width: 50%;
+            height: 35%;
+            top: 0;
+            left: -60px;
+            z-index: -1;
+        }
+    }
+    &_description{
+        color:$gray;
+        width: 500px;
+        padding-bottom: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    &_links{
+        .button{
+            @include button();
+            position: relative;
+            font-weight: 200;
+            font-size: 12px;
+            margin-bottom: 120px;
+            &::after{
+                content:"";
+                width: 15px;
+                height: 15px;
+                background-image: url(../../img/diagonalArrow.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 110%;
+                position: absolute;
+                right: 6px;
+            }
+        }
+        .link{
+            text-decoration: none;
+            color: $black;
+            padding-left: 26px;
+            font-size: 12px;
+            position: relative;
+            &::after{
+                content:"";
+                width: 15px;
+                height: 15px;
+                background-image: url(../../img/arrow2.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: absolute;
+                top: 1px;
+                right: -20px;
+            }
+        }
+    }
+    &_foot{
+        margin-bottom: 45px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        & div{
+            width: 90px;
+        }
+        h3{
+            font-size: 54px;
+            font-weight: 500;
+            color: $black;
+        }
+        p{
+            color: $gray;
+            line-height: 28px;
+        }
+        .gray_color{
+            position: relative;
+            &::before{
+                content:"";
+                background-color: #DEDAD5;
+                opacity: 0.25;
+                position: absolute;
+                width: 255%;
+                height: 225%;
+                top: 0;
+                left: -60px;
+                z-index: -1;
+            }
+        }
+    }
+}
