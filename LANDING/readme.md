@@ -42,40 +42,40 @@ Las contribuciones son bienvenidas. Para ello:
 
 # 📱 Responsive Projects
 
-# 📌 Description
+## 📌 Description
 
 These projects are a responsive webpage developed using HTML, CSS, and SASS. Its goal is to provide an optimal user experience across different devices through the use of media queries and CSS preprocessing.
 
-# 🚀 Technologies Used
+## 🚀 Technologies Used
 HTML5 → Project structure
 CSS3 → Base styles
 SASS (SCSS) → CSS preprocessor for modularity and code reusability
 
-# 🛠 Installation and Setup
+## 🛠 Installation and Setup
 
 Clone the repository
 Navigate to the project directory
 Install SASS (if not already installed) -> npm install -g sass
 Compile SCSS files to CSS -> sass --watch sass/styles.scss:css/styles.css
 
-# 📲 Responsive Design
+## 📲 Responsive Design
 This project utilizes media queries to adapt to different screen resolutions. The main rules include:
 Mobile First: Designed first for mobile devices and then adjusted for larger screens.
 Breakpoints:
 - @media (min-width: 768px) { /* Tablets */ }
 - @media (min-width: 1024px) { /* Desktop */ }
 
-# ✨ Features
+## ✨ Features
 
 ✔ Adaptable design for mobile, tablet, and desktop
 ✔ Use of variables and mixins in SASS
 ✔ Modular and easy-to-maintain code
 ✔ Optimized file structure
 
-# 📜 License
+## 📜 License
 This project is under the MIT license.
 
-# 🤝 Contributions
+## 🤝 Contributions
 Contributions are welcome. To contribute:
 1. Fork the repository.
 2. Create a new branch (git checkout -b feature-new)
