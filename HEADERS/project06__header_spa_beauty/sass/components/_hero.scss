@@ -47,12 +47,13 @@
 }
 .opinion{
     width: 35%;
+    position: relative;
     &_woman_img{
-        width: 1050px;
+        width: 237%;
         z-index: 1;
-        position: relative;
-        bottom: 10%;
-        right: 132%;
+        position: absolute;
+        bottom: 1%;
+        right: -1%;
     }
     div{
         padding: 15px;
@@ -73,12 +74,12 @@
     }
     &_01{
         position: relative;
-        top:-49%;
-        left:52%;
+        top:-51%;
+        left:55%;
     }
     &_02{
         position: relative;
-        bottom: 43%;
+        bottom: 48%;
 
     }
 }
